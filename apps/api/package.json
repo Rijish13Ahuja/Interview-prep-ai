@@ -1,0 +1,32 @@
+{
+  "name": "@trao/api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "test": "vitest run",
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@trao/core": "*",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.3",
+    "bcrypt": "^5.1.1",
+    "express-session": "^1.18.1",
+    "connect-mongo": "^5.1.0",
+    "cors": "^2.8.5",
+    "zod": "^3.23.8",
+    "dotenv": "^16.4.5",
+    "tsx": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/bcrypt": "^5.0.2",
+    "@types/express-session": "^1.18.0",
+    "@types/cors": "^2.8.17",
+    "@types/supertest": "^6.0.2",
+    "supertest": "^7.0.0"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "trao-interview-prep-ai",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "evaluate": "tsx scripts/evaluate.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "dev:api": "npm run dev --workspace=apps/api",
+    "dev:web": "npm run dev --workspace=apps/web",
+    "build": "npm run build --workspace=packages/core && npm run build --workspace=apps/api && npm run build --workspace=apps/web"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "tsx": "^4.19.2",
+    "vitest": "^2.1.4",
+    "dotenv": "^16.4.5",
+    "@types/node": "^22.9.0"
+  }
+}
